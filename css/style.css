@@ -9,7 +9,6 @@ p {
     margin: 0 0 1em
 }
 
-
 #boxmodel {
     display: grid;
     grid-template-columns: repeat (6, 1fr);
@@ -29,6 +28,7 @@ p {
     background-image: url(../images/red.png);
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
+    background-repeat: no-repeat;
 }
 
 #contact:hover {
@@ -41,6 +41,7 @@ p {
     background-image: url(../images/orange.png);
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
+    background-repeat: no-repeat;
 }
 
 #merch:hover {
@@ -53,18 +54,21 @@ p {
     background-image: url(../images/yellow.png);
     grid-column: 4 / span 1;
     grid-row: 1 / span 2;
+    background-repeat: no-repeat;
 }
 
 #artistbio:hover {
     background-image: url(../images/yellowicon.png);
     object-fit: cover;
     height: 100vh;
+    
 }
 
 #socialmedia {
     background-image: url(../images/green.png);
     grid-column: 5;
     grid-row: 1 / span 2;
+    background-repeat: no-repeat;
 }
 
 #socialmedia:hover {
@@ -77,6 +81,7 @@ p {
     background-image: url(../images/blue.png);
     grid-column: 6;
     grid-row: 1 / span 2;
+    background-repeat: no-repeat;
 }
 
 #portfolio:hover {
