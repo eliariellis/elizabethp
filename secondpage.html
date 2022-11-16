@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="javascript" href="javascript/secondpage.js">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliariellis</title>
- <!--<link rel="stylesheet" href="css/style.css"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliariellis</title>
+  <!--<link rel="stylesheet" href="css/style.css"> -->
 
 </head>
-<body1>
-    <ul class="horizontalList">
-        <a href="index.html">
-          <li id="homebutton">Home</li></a>
-          <li id="redcontact"><img src="images/red.png"></img></li>
 
-</body1>
-<section id="contact">
-  
-  <h1 class="section-header">Contact</h1>
-  
-  <div class="contact-wrapper">
-  
-  
-    
-    <form id="contact-form" class="form-horizontal" role="form">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-        </div>
-      </div>
+<body>
+  <ul class="horizontalList">
+    <a href="index.html">
+      <li id="homebutton">Home</li>
+    </a>
+</ul>
+    <Div>
+      <li id="redcontact"><img src="images/red.png"></img></li>
+    </div>
 
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-        </div>
-      </div>
+</body>
+<h1 class="section-header">Contact</h1>
 
-      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-        </div>
-      
-      </button>
-      
-    </form>
+<div id="email">
+  <form action="https://formspree.io/f/xeqdnkqr" method="POST">
+    <label>
+      Your Email:
+      <input type="email" name="email">
+    </label>
+    <label>
+      Your Name:
+      <input type="email" name="email">
+    </label>
+    <label>
+      Your Message:
+      <textarea name="message"></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
 <style>
-  .horizontalList{
-    text-align: center;
-    list-style-type:none;
+  body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
   }
-  
-  .horizontalList li{
+
+  #redcontact {
+    height: 10vh;
+    width: 20vw;
+    display: inline-block;
+  }
+
+  .horizontalList {
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .horizontalList li {
     display: inline;
     margin: 0 auto;
-    padding:10px 20px;
+    padding: 10px 20px;
     position: center;
     align: center;
     text-align: center;
     font-size: 30px;
-    color:black;
+    color: black;
   }
-  a{
+
+  a {
     text-decoration: none;
   }
-  #redcontact{
-height: 20vh;
-width: 40vw;
-  }
-  #homebutton{
+
+  #homebutton {
     background-color: none;
-   background-image: url("https://cdn-icons-png.flaticon.com/512/458/458842.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-   background-position: center;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/458/458842.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
-  #homebutton:hover{
-    background: red;
-    border-radius:50%;
-    color:white;
+
+  #homebutton:hover {
+    background: #FD5430;
+    border-radius: 50%;
+    color: white;
   }
 
   body {
@@ -89,77 +95,22 @@ width: 40vw;
     padding: 0;
     background-color: #000;
     padding-bottom: 100px;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+
   }
-  
-  #contact {
-    width: 100%;
-    height: 100%;
+
+  #email {
+    display: inline-block;
+ 
+  width:40vw;
+  height:42.5vh;
+ background-color:#FD5430; 
+  margin-left:2.5vw;
+  margin-top:2.5vh;
+  border-radius: 30px;
   }
-  
-  .section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
-    color:red;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-  
-  .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    max-width: 840px;
-  }
-  
-  /* Left contact page */
-  .form-horizontal {
-    /*float: left;*/
-    max-width: 400px;
-    font-family: 'Lato';
-    font-weight: 400;
-  }
-  
-  .form-control, 
-  textarea {
-    max-width: 400px;
-    background-color: white;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-  
-  .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-  }
-  
-  .alt-send-button {
-    width: 400px;
-    height: 34px;
-    transition: all .2s ease-in-out;
-  }
-  
-  .send-text {
-    display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
-  }
-  
-  /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 400px;
-  }
-  </style>
+</style>
+
 </html>
